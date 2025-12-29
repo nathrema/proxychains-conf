@@ -1,35 +1,35 @@
 # proxychains-conf
 
-Configure and run proxychains inline
+Configure and run proxychains inline  
 
-
-socks4 127.0.0.1 1080
-strict_chain
-```
-proxychains-conf curl https://example.com
-```
-
-http 127.0.0.1 8080
-strict_chain
-```
-proxychains-conf -t http -p 8080 curl https://example.com
-```
-
-socks5 127.0.0.1 8080
-dynamic_chain
-```
-proxychains-conf -t socks5 -p 8080 -c dynamic curl https://example.com
-```
 
 ## Install
 ```
 wget https://github.com/nathrema/proxychains-conf/refs/heads/main/install.sh | sh
 ```
+  
+## Examples
+socks4 127.0.0.1 1080  
+strict_chain  
+```
+proxychains-conf curl https://example.com
+```
+
+http 127.0.0.1 8080  
+strict_chain  
+```
+proxychains-conf -t http -p 8080 curl https://example.com
+```
+
+socks5 127.0.0.1 8080  
+dynamic_chain  
+```
+proxychains-conf -t socks5 -p 8080 -c dynamic curl https://example.com
+```
 
 ## Uninstall
 ```
 wget https://github.com/nathrema/proxychains-conf/refs/heads/main/uninstall.sh | sh
-
 ```
 
 ## Help
