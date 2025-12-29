@@ -5,7 +5,7 @@ Configure and run proxychains inline
 
 ## Install
 ```
-wget https://github.com/nathrema/proxychains-conf/refs/heads/main/install.sh | sh
+wget https://raw.githubusercontent.com/nathrema/proxychains-conf/refs/heads/main/install.sh | sudo sh
 ```
   
 ## Examples
@@ -29,7 +29,8 @@ proxychains-conf -t socks5 -p 8080 -c dynamic curl https://example.com
 
 ## Uninstall
 ```
-wget https://github.com/nathrema/proxychains-conf/refs/heads/main/uninstall.sh | sh
+wget https://raw.githubusercontent.com/nathrema/proxychains-conf/refs/heads/main/uninstall.sh | sudo sh
+
 ```
 
 ## Help
